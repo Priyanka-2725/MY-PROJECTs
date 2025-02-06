@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PAYMENT FORM</title>
+    </head>
+    <body>
+        <form action="">
+            <h1>Payment Form</h1>
+            <h2>Contact Information</h2>
+            <p>Required fields are followed by a *</p>
+            <p>Name: *<input type="text" name="name" required></p>
+            <fieldset>
+                <legend>GENDER*</legend>
+            <p>
+                
+                Male <input type="radio" name="gender" id="male" value="male" required>
+                female <input type="radio" name="gender" id="female" value="female" required>
+            </p>
+            </fieldset>
+            <p>
+                Address: <textarea name="address" id="addess" cols="100" rows="6"></textarea></p>
+            <p>Email*: <input type="email" name=" email" id="email" required></p>
+            <p>Pincode*: <input type="number" name="pincode" id="pincode" required></p>
+            <hr>
+            <h2>Payment Information</h2>
+            <p>Card Type*:
+                <select name="card_type" id="cars_type" required>
+                    <option value="">--Select a card--</option>
+                    <option value="visa">VISA</option>
+                    <option value="rupay">RUPAY</option>
+                    <option value="mastercard">MASTERCARD</option>
+                </select>    
+            </p>
+            <p>
+                Card Number*: <input type="number" name=" card_number" id="card_number" required>
+            </p>
+            <p>Expiration Date*: <input type="date" name="expiration_date" id="expiration_date" required></p>
+            <p>CVV*: <input type="password" name="cvv" id="cvv" required></p>
+            <input type="submit" value="Pay Now">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>
